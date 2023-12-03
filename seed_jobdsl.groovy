@@ -19,7 +19,7 @@ pipelineJob('hello-world-pipeline') {
     }
 }
 pipelineJob('lum-monitoring-minikube-stack') {
-    displayName('Monitoring all the current Minikube nodes and jobs')
+    displayName('lum-monitoring-minikube-stack')
     description('Pipeline to monitoring Minikube from https://github.com/alexfbasa/JenkinsJobDsL.git')
 
     definition {
