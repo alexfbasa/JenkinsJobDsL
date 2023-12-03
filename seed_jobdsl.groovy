@@ -27,14 +27,11 @@ pipelineJob('lum-monitoring-minikube-stack') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/alexfbasa/gradle-hello-world.git'
+                        url 'https://github.com/alexfbasa/JenkinsJobDsL.git'
                     }
                 }
             }
             scriptPath('Jenkinsfile')
         }
-    }
-    triggers {
-        cron('*/1 * * * *')
     }
 }
