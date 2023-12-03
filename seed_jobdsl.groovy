@@ -8,7 +8,6 @@ pipelineJob('hello-world-pipeline') {
                 git {
                     remote {
                         github('https://github.com/alexfbasa/gradle-hello-world.git')
-                        credentials('github-token')
                     }
                 }
             }
