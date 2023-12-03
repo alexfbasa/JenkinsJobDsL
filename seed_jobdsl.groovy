@@ -15,6 +15,6 @@ pipelineJob('hello-world-pipeline') {
         }
     }
     triggers {
-        triggerOnLoad()
+        cron('*/1 * * * *')
     }
 }
