@@ -7,12 +7,14 @@ pipelineJob('hello-world-pipeline') {
             scm {
                 git {
                     remote {
-                        github('https://github.com/alexfbasa/gradle-hello-world.git')
-                        credentials('github-token')
+                        url 'https://github.com/alexfbasa/gradle-hello-world.git'
                     }
                 }
             }
             scriptPath('Jenkinsfile')
         }
+    }
+    triggers {
+        triggerOnLoad()
     }
 }
